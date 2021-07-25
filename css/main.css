@@ -1,0 +1,57 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.l-header {
+  display: flex;
+  alig-items: center;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 0 5px 10px 0 #999;
+}
+
+.l-header__title {
+  height: 100%;
+  font-weight: bold;
+  color: #111;
+}
+
+.l-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: calc(100vw - 20px);
+  margin: 40px auto 0;
+}
+
+.l-main__image {
+  display: block;
+  width: 100%;
+}
+
+.c-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c-loader--loading {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.p-image-container {
+  display: none;
+}
