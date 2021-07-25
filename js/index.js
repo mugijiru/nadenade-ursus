@@ -17,6 +17,11 @@ window.addEventListener('DOMContentLoaded', function() {
   loader.classList = ['c-loader']
 });
 
+// スクロールを無効にする
+window.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+}, { passive: false });
+
 // ポインタ位置で表示画像を制御
 window.addEventListener('pointermove', (event) => {
   const num = parseInt(max * event.clientX / window.innerWidth, 10);
